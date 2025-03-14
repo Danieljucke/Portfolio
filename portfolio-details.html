@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Daniel Joy</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://twitter.com/tjwrite24" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/joytanckwe" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/danieljoylio/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/joy-daniel-9428b9348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i>About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i>Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i>Portfolio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i>Services</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+   <!-- Portfolio Details Section -->
+<section id="portfolio-details" class="portfolio-details section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <div class="col-lg-8">
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <!-- Les slides seront générées par JavaScript -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+          <h3></h3>
+          <ul>
+            <!-- Les informations seront générées par JavaScript -->
+          </ul>
+        </div>
+        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /Portfolio Details Section -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Liste des projets
+  const projects = {
+    "ecommerce": {
+      title: "Hotel & Restaurant Reservation System",
+      category: "Web Development",
+      client: "Independent Project",
+      date: "June 2023",
+      url: "https://github.com/Danieljucke/Eshop.git",
+      description: "A full-stack web application for booking hotels, restaurants, and event spaces.",
+      images: [
+        "assets/img/portfolio/ecommerce-1.png",
+        "assets/img/portfolio/ecommerce-2.png",
+        "assets/img/portfolio/ecommerce-3.png"
+      ]
+    },
+    "sales-prediction": {
+      title: "Sales Prediction Model",
+      category: "Machine Learning",
+      client: "Data Science Project",
+      date: "April 2023",
+      url: "https://github.com/Danieljucke/TransReser.git",
+      description: "A machine learning model predicting future sales based on historical data.",
+      images: [
+        "assets/img/portfolio/sales-prediction.png"
+      ]
+    },
+    "heart-disease": {
+      title: "Heart Disease Prediction",
+      category: "AI & Healthcare",
+      client: "Medical Research",
+      date: "August 2023",
+      url: "https://github.com/Danieljucke/memoire.git",
+      description: "A machine learning model predicting heart diseases using TensorFlow and Scikit-learn.",
+      images: [
+        "assets/img/portfolio/heart-disease-1.png",
+        "assets/img/portfolio/heart-disease-2.png"
+      ]
+    },
+    "flutter-app": {
+      title: "Mobile App Development",
+      category: "Mobile Development",
+      client: "Startup Project",
+      date: "November 2023",
+      url: "https://github.com/Danieljucke/Echos26.git",
+      description: "A cross-platform mobile app built with Flutter for seamless user experience.",
+      images: [
+        "assets/img/portfolio/flutter-app-3.png",
+        "assets/img/portfolio/flutter-app-5.png"
+      ]
+    }
+  };
+
+  // Récupérer l'ID du projet depuis l'URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const projectId = urlParams.get("id");
+  
+  console.log("Project ID:", projectId); // Pour déboguer
+
+  // Vérifier si le projet existe
+  if (projects[projectId]) {
+    const project = projects[projectId];
+    console.log("Project found:", project); // Pour déboguer
+
+    // Mettre à jour les informations du projet
+    document.querySelector(".portfolio-info h3").innerText = project.title;
+    document.querySelector(".portfolio-info ul").innerHTML = `
+      <li><strong>Category</strong>: ${project.category}</li>
+      <li><strong>Client</strong>: ${project.client}</li>
+      <li><strong>Project date</strong>: ${project.date}</li>
+      <li><strong>Project URL</strong>: <a href="${project.url}" target="_blank">Click Here</a></li>
+    `;
+
+    document.querySelector(".portfolio-description h2").innerText = project.title;
+    document.querySelector(".portfolio-description p").innerText = project.description;
+
+    // Générer les images du slider
+    let sliderHTML = "";
+    project.images.forEach(img => {
+      sliderHTML += `<div class="swiper-slide"><img src="${img}" alt="${project.title}"></div>`;
+    });
+    document.querySelector(".swiper-wrapper").innerHTML = sliderHTML;
+    
+    // Initialiser Swiper après avoir ajouté les slides
+    const swiperOptions = {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000
+      },
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    };
+    
+    // S'assurer que Swiper est chargé avant de l'initialiser
+    if (typeof Swiper !== 'undefined') {
+      new Swiper('.portfolio-details-slider', swiperOptions);
+    } else {
+      console.error("Swiper library not loaded!");
+    }
+  } else {
+    console.log("Project not found for ID:", projectId); // Pour déboguer
+    document.querySelector(".portfolio-details").innerHTML = `
+      <div class="container">
+        <h2 class="text-center">Project not found</h2>
+      </div>
+    `;
+  }
+});
+</script>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
