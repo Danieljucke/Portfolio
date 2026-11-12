@@ -13,8 +13,8 @@
   <meta name="twitter:card" content="summary">
   <link href="assets/img/favicon.png" rel="icon">
   <style>
-    :root { color-scheme: light dark; --bg:#f7f8fa; --surface:#fff; --text:#172033; --muted:#566176; --line:#dfe3ea; --accent:#2855d9; --max:1080px; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#0e121a; --surface:#161c27; --text:#edf1f8; --muted:#aeb8ca; --line:#2d3544; --accent:#8eaeff; } }
+    :root { color-scheme: light dark; --bg:#f7f8fa; --surface:#fff; --text:#172033; --muted:#566176; --line:#dfe3ea; --accent:#2855d9; --button-text:#fff; --max:1080px; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0e121a; --surface:#161c27; --text:#edf1f8; --muted:#aeb8ca; --line:#2d3544; --accent:#8eaeff; --button-text:#0e121a; } }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
@@ -38,7 +38,7 @@
     .lead { max-width:68ch; color:var(--muted); font-size:clamp(1.1rem,2vw,1.3rem); }
     .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:2rem; }
     .button { display:inline-block; padding:.7rem 1rem; border:1px solid var(--line); border-radius:8px; color:var(--text); text-decoration:none; font-weight:650; background:var(--surface); }
-    .button.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+    .button.primary { background:var(--accent); border-color:var(--accent); color:var(--button-text); }
     .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
     .card { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:1.4rem; }
     .card p { color:var(--muted); }
