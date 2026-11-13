@@ -1,133 +1,284 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daniel Joy | Software Engineer</title>
-  <meta name="description" content="Daniel Joy builds cross-platform applications, local-first tools, and secure software systems.">
-  <link rel="canonical" href="https://danieljucke.github.io/Portfolio/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Daniel Joy | Software Engineer">
-  <meta property="og:description" content="Cross-platform applications, local-first tools, and secure software systems.">
-  <meta property="og:url" content="https://danieljucke.github.io/Portfolio/">
-  <meta name="twitter:card" content="summary">
-  <link href="assets/img/favicon.png" rel="icon">
-  <style>
-    :root { color-scheme: light dark; --bg:#f7f8fa; --surface:#fff; --text:#172033; --muted:#566176; --line:#dfe3ea; --accent:#2855d9; --button-text:#fff; --max:1080px; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#0e121a; --surface:#161c27; --text:#edf1f8; --muted:#aeb8ca; --line:#2d3544; --accent:#8eaeff; --button-text:#0e121a; } }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
-    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
-    a { color:var(--accent); text-underline-offset:.2em; }
-    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:2px; }
-    .wrap { width:min(calc(100% - 2rem),var(--max)); margin:auto; }
-    header { border-bottom:1px solid var(--line); background:color-mix(in srgb,var(--bg) 92%,transparent); }
-    nav { display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:64px; }
-    nav strong { letter-spacing:-.02em; }
-    nav ul { display:flex; flex-wrap:wrap; gap:1rem; list-style:none; margin:0; padding:0; }
-    nav a { color:var(--text); text-decoration:none; }
-    main { padding-bottom:4rem; }
-    section { padding:4.5rem 0; border-bottom:1px solid var(--line); }
-    .hero { padding:7rem 0 6rem; }
-    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:.78rem; }
-    h1,h2,h3 { line-height:1.15; letter-spacing:-.035em; margin-top:0; }
-    h1 { font-size:clamp(2.8rem,8vw,5.8rem); max-width:13ch; margin-bottom:1.25rem; }
-    h2 { font-size:clamp(2rem,5vw,3rem); }
-    h3 { font-size:1.35rem; }
-    .lead { max-width:68ch; color:var(--muted); font-size:clamp(1.1rem,2vw,1.3rem); }
-    .actions { display:flex; flex-wrap:wrap; gap:.8rem; margin-top:2rem; }
-    .button { display:inline-block; padding:.7rem 1rem; border:1px solid var(--line); border-radius:8px; color:var(--text); text-decoration:none; font-weight:650; background:var(--surface); }
-    .button.primary { background:var(--accent); border-color:var(--accent); color:var(--button-text); }
-    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
-    .card { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:1.4rem; }
-    .card p { color:var(--muted); }
-    .meta { font-size:.9rem; color:var(--muted); }
-    .stack { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; }
-    .stack ul { padding-left:1.2rem; color:var(--muted); }
-    footer { padding:2rem 0; color:var(--muted); font-size:.9rem; }
-    @media (max-width:720px) { .hero{padding:5rem 0 4rem}.grid,.stack{grid-template-columns:1fr}nav{align-items:flex-start;padding:1rem 0}nav ul{justify-content:flex-end}section{padding:3.5rem 0} }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lio | Software Engineer — Mélo Technology</title>
+<meta name="description" content="Lio — software engineering projects at Mélo Technology: NetShare, MeloShelf, Flutter, Python, full-stack development, and practical tools.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a3df5'/%3E%3Ccircle cx='9' cy='16' r='3' fill='white'/%3E%3Ccircle cx='23' cy='16' r='3' fill='white'/%3E%3Cpath d='M12 16h8' stroke='white' stroke-width='2' stroke-dasharray='2 2'/%3E%3C/svg%3E">
+<style>
+:root{--h:232;--sh:#e4e7ec;--ink:#14161b;--mut:#4d535e;--sig:hsl(var(--h) 90% 48%);--fld:hsl(var(--h) 96% 70%);--on:hsl(var(--h) 70% 9%);color-scheme:light}
+:root[data-theme=dark]{--sh:#15181f;--ink:#e7eaf0;--mut:#9aa2b1;--sig:hsl(var(--h) 100% 72%);color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--sh:#15181f;--ink:#e7eaf0;--mut:#9aa2b1;--sig:hsl(var(--h) 100% 72%);color-scheme:dark}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--sh);color:var(--ink);font:1.0625rem/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sig);outline-offset:3px}
+.hero :focus-visible,.cta :focus-visible{outline-color:var(--on)}
+.wrap{max-width:1280px;margin:auto;padding:0 clamp(1rem,4vw,3rem)}
+.hero{position:relative;height:100svh;min-height:560px;background:var(--fld);color:var(--on);overflow:hidden;cursor:crosshair;touch-action:pan-y}
+#cv{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;height:100%;pointer-events:none}
+.hero a,.hero button,.hero input{pointer-events:auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 0;font-weight:600;flex-wrap:wrap}
+.top nav,.ctl{display:flex;gap:1.2rem;align-items:center}
+.top a{text-decoration:none}
+.top a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+#clk{font:600 .95rem ui-monospace,Menlo,Consolas,monospace}
+.ctl label{display:flex;align-items:center;gap:.5rem;font-size:.9rem}
+input[type=range]{width:7rem;accent-color:var(--on);height:1.4rem}
+button{font:inherit;font-weight:600;background:var(--on);color:var(--fld);border:0;border-radius:4px;padding:.45rem .8rem;cursor:pointer}
+h1{margin:1.5rem 0 0;line-height:0}
+h1 svg{height:clamp(6rem,27vw,21rem);width:auto;max-width:100%;overflow:visible;display:block}
+.g{transform-box:fill-box;transform-origin:50% 100%;will-change:transform}
+.lg{fill:none;stroke:currentColor;stroke-width:34}
+.fact{position:absolute;left:clamp(1rem,4vw,3rem);bottom:2.7rem;max-width:42ch;font-size:clamp(1rem,2vw,1.25rem);font-weight:700;line-height:1.3}
+.lead{max-width:30ch;font-size:clamp(1.15rem,2.4vw,1.6rem);line-height:1.3;font-weight:600;margin-top:1.6rem}
+.hint{position:absolute;left:clamp(1rem,4vw,3rem);bottom:1.1rem;font-size:.9rem;font-weight:600}
+.hint i{font:normal 600 .9rem ui-monospace,Menlo,Consolas,monospace}
+.rail{position:fixed;left:14px;top:22%;height:56%;width:4px;background:rgba(127,127,127,.35);border-radius:2px;z-index:5}
+.rail i{position:absolute;inset:0;background:var(--sig);border-radius:2px;transform-origin:top;transform:scaleY(0);box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.rail a{position:absolute;left:-5px;width:14px;height:14px;border-radius:50%;background:var(--sh);border:3px solid var(--sig)}
+section.s{padding:clamp(4rem,10vw,8rem) 0}
+h2{font-size:clamp(2.4rem,7vw,5.5rem);letter-spacing:-.05em;line-height:.95;margin-bottom:2.2rem}
+.w details{border-top:3px solid var(--ink)}
+.w details:last-child{border-bottom:3px solid var(--ink)}
+.w summary{list-style:none;display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1.4rem .4rem;cursor:pointer;transition:background .15s,color .15s}
+.w summary::-webkit-details-marker{display:none}
+.w summary:hover,.w summary:focus-visible{background:var(--ink);color:var(--sh)}
+.w h3{font-size:clamp(1.8rem,5.5vw,4rem);letter-spacing:-.045em;line-height:1}
+.w summary span{font:500 .9rem ui-monospace,Menlo,Consolas,monospace;color:var(--mut);text-align:right}
+.w summary:hover span,.w summary:focus-visible span{color:inherit}
+.w summary::after{content:"+";font-size:2.2rem;font-weight:300;line-height:1;transition:transform .2s}
+.w details[open] summary::after{transform:rotate(45deg)}
+.w .b{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:1rem .4rem 2.2rem}
+.w .b p{max-width:48ch}
+.w .b ul{list-style:none;padding:0;font:500 .95rem/1.9 ui-monospace,Menlo,Consolas,monospace;border-left:3px solid var(--sig);padding-left:1rem}
+.w .b a{font-weight:700;text-underline-offset:4px;text-decoration-color:var(--sig);text-decoration-thickness:3px}
+.term{background:var(--ink);color:var(--sh)}
+.term .box{font:500 1rem/1.7 ui-monospace,Menlo,Consolas,monospace;max-width:760px;border:3px solid var(--sh);border-radius:8px;padding:1.2rem;min-height:15rem;max-height:24rem;overflow:auto}
+.term h2{color:var(--sh)}
+.term .p{display:flex;gap:.6rem}
+.term input{flex:1;min-width:0;background:none;border:0;color:inherit;font:inherit;outline:0}
+.term .box:focus-within{outline:3px solid var(--sig);outline-offset:3px}
+.term .ok{color:inherit}
+.cta{background:var(--fld);color:var(--on)}
+.mail{display:block;font-size:clamp(1.6rem,7.4vw,6.4rem);font-weight:900;letter-spacing:-.06em;line-height:1;text-decoration:underline;text-decoration-thickness:.07em;text-underline-offset:.12em;overflow-wrap:anywhere}
+.mail:hover{background:var(--on);color:var(--fld);text-decoration:none}
+footer{padding:1.6rem 0;font-size:.9rem;color:var(--mut);text-align:center}
+@media (max-width:900px){.rail{display:none}.w .b{grid-template-columns:1fr}}
+@media (max-width:640px){.ctl label{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+#wp{position:fixed;inset:0;z-index:100;background:var(--fld);border-right:6px solid var(--on);transform:translateX(-101%);pointer-events:none;will-change:transform}
+.ap{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.ap h3{font-size:clamp(1.4rem,3vw,2rem);letter-spacing:-.04em;line-height:1.05;border-top:3px solid var(--ink);padding-top:1rem;margin-bottom:.8rem}
+.ap ul{padding-left:1.1rem}
+.soc{display:flex;gap:1.6rem;margin-top:1.6rem;font-size:1.2rem;font-weight:700;flex-wrap:wrap;align-items:center}.soc span{font-size:.85rem;font-weight:500;opacity:.7}
+@media (max-width:900px){.ap{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
-  <header>
-    <nav class="wrap" aria-label="Primary navigation">
-      <strong>Daniel Joy</strong>
-      <ul>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#approach">Approach</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <p class="eyebrow">Software Engineer</p>
-        <h1>Practical software, built with care.</h1>
-        <p class="lead">I build cross-platform applications, local-first tools, and secure systems. My work emphasizes clear architecture, careful data handling, and documentation grounded in what the software actually does.</p>
-        <div class="actions">
-          <a class="button primary" href="#work">View selected work</a>
-          <a class="button" href="https://github.com/Danieljucke">GitHub profile</a>
-        </div>
-      </div>
-    </section>
-    <section id="work">
-      <div class="wrap">
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects as evidence</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>MeloShelf</h3>
-            <p>A local-first Windows application that identifies tracks, completes metadata, and safely organizes audio libraries with preview, verification, and crash recovery.</p>
-            <p class="meta">Python · FastAPI · SQLite · Chromaprint</p>
-            <a href="https://github.com/Danieljucke/MeloShelf">Source and Windows v0.2.0 release</a>
-          </article>
-          <article class="card">
-            <h3>Media Duplicate Finder</h3>
-            <p>A desktop workflow for detecting and reviewing visually similar images and videos before any permanent deletion.</p>
-            <p class="meta">Python · Tkinter · OpenCV · perceptual hashing</p>
-            <a href="https://github.com/Danieljucke/Media-filter">View repository</a>
-          </article>
-          <article class="card">
-            <h3>Deezer to Spotify</h3>
-            <p>A focused transfer utility for public Deezer playlists, with Spotify matching, batched additions, and explicit unmatched-track reporting.</p>
-            <p class="meta">Python · Spotipy · Requests · OAuth</p>
-            <a href="https://github.com/Danieljucke/DeezerToSpotify">View repository</a>
-          </article>
-          <article class="card">
-            <h3>SpotiFilter</h3>
-            <p>A command-line tool that examines a Spotify library and builds genre- or region-based playlists without adding duplicate tracks.</p>
-            <p class="meta">Python · Spotify Web API · environment-based configuration</p>
-            <a href="https://github.com/Danieljucke/SpotiFilter">View repository</a>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section id="approach">
-      <div class="wrap">
-        <p class="eyebrow">Approach</p>
-        <h2>Engineering priorities</h2>
-        <div class="stack">
-          <div><h3>Reliable workflows</h3><ul><li>Explicit previews and confirmations</li><li>Recoverable file operations</li><li>Clear failure reporting</li></ul></div>
-          <div><h3>Maintainable systems</h3><ul><li>Focused modules and APIs</li><li>Tests around critical behavior</li><li>Repeatable setup and packaging</li></ul></div>
-          <div><h3>Responsible data use</h3><ul><li>Local-first processing where practical</li><li>Credentials kept outside source</li><li>Limitations documented plainly</li></ul></div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="wrap">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s discuss useful software.</h2>
-        <p class="lead">The best way to reach me is by email or LinkedIn. You can also inspect the implementation and documentation behind each project on GitHub.</p>
-        <div class="actions">
-          <a class="button primary" href="mailto:danieljoyta@proton.me">Email Daniel</a>
-          <a class="button" href="https://www.linkedin.com/in/joy-daniel-9428b9348">LinkedIn</a>
-          <a class="button" href="https://github.com/Danieljucke">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer><div class="wrap">Daniel Joy. This portfolio uses no tracking or contact-form backend.</div></footer>
+<div id="wp" aria-hidden="true"></div>
+<script>
+(function(){var w=document.getElementById('wp'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches,E='transform .3s cubic-bezier(.7,0,.2,1)';
+try{if(sessionStorage.getItem('wp')&&!rm){sessionStorage.removeItem('wp');w.style.transform='translateX(0)';addEventListener('DOMContentLoaded',function(){requestAnimationFrame(function(){requestAnimationFrame(function(){w.style.transition=E;w.style.transform='translateX(101%)'})})})}}catch(e){}
+addEventListener('pageshow',function(e){if(e.persisted){w.style.transition='none';w.style.transform='translateX(-101%)'}});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a');if(!a||rm||e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||a.target)return;var u=new URL(a.href,location.href);if(u.origin!==location.origin||u.pathname===location.pathname||!/\.html$|\/$/.test(u.pathname))return;e.preventDefault();try{sessionStorage.setItem('wp','1')}catch(x){}w.style.transition=E;w.style.transform='translateX(0)';setTimeout(function(){location.href=a.href},300)});
+})();
+</script>
+<nav class="rail" aria-label="Reading progress"><i id="bar"></i><a href="#top" style="top:-7px" aria-label="Top"></a><a href="#work" style="top:30%" aria-label="Work"></a><a href="#console" style="top:62%" aria-label="Console"></a><a href="#contact" style="bottom:-7px" aria-label="Contact"></a></nav>
+
+<header class="hero" id="top">
+  <canvas id="cv" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="top">
+      <span id="clk">--:--:--</span>
+      <nav aria-label="Navigation"><a href="#work">Work</a><a href="#approach">Approach</a><a href="#console">Console</a><a href="#contact">Contact</a></nav>
+      <div class="ctl"><label>Hue<input id="hue" type="range" min="0" max="360" value="232" aria-label="Signal hue"></label><button id="mode" type="button">Dark mode</button></div>
+    </div>
+    <h1 aria-label="Lio"><svg viewBox="0 -30 430 200" aria-hidden="true"><g class="g"><path class="lg" d="M17 8V143H118"/></g><g class="g"><path class="lg" d="M203 62V160"/><rect x="186" y="8" width="34" height="34" fill="currentColor"><animateMotion dur="6s" repeatCount="indefinite" calcMode="linear" keyTimes="0;.3;.42;.78;.9;1" keyPoints="0;0;1;1;0;0" path="M0 0Q66 -46 132 0"/></rect></g><g class="g"><circle class="lg" cx="335" cy="111" r="32"/></g></svg></h1>
+    <p class="lead">I connect Python and Flutter through a secure tunnel.</p>
+    <p class="fact" id="fact" aria-live="polite"></p>
+    <p class="hint">Move to bend the signal. Click to send a packet. <i id="cnt">0/6 facts</i></p>
+  </div>
+</header>
+
+<main>
+<section class="s w" id="work"><div class="wrap">
+  <h2>Work</h2><div>
+  <details open><summary><h3>NetShare Server</h3><span>Python, Tkinter</span></summary>
+    <div class="b"><p>A Windows desktop application distributed through the Microsoft Store and direct installers. It provides the desktop endpoint for secure file and media access.</p>
+    <ul><li>Desktop: Python, Tkinter</li><li>Distribution: Microsoft Store, direct installer</li><li>Networking: Cloudflare Zero Trust tunnel</li><li><a href="server.html">Explore the project</a></li></ul></div></details>
+  <details><summary><h3>NetShare Player</h3><span>Flutter</span></summary>
+    <div class="b"><p>A Flutter mobile player available on Google Play and Huawei AppGallery, with iOS support planned. It connects to the desktop server for media and files.</p>
+    <ul><li>Mobile : Flutter</li><li>Distribution: Google Play, Huawei AppGallery</li><li><a href="https://netshareplayer.com" rel="noopener">netshareplayer.com</a></li><li><a href="player.html">Explore the project</a></li></ul></div></details>
+  <details><summary><h3>Full-stack</h3><span>React, Vue, Node.js, .NET, FastAPI</span></summary>
+    <div class="b"><p>Full-stack work across frontend, backend, APIs, databases, and deployment — selecting a stack to suit the product rather than forcing one framework.</p>
+    <ul><li>Frontend: React, Vue.js, TypeScript, JavaScript</li><li>Backend: Node.js, Express, FastAPI, C#, .NET 8</li><li>Data &amp; delivery: PostgreSQL, SQLite, MySQL, MongoDB, Prisma, Docker, GitHub Actions</li><li><a href="#contact">Let's talk</a></li><li><a href="fullstack.html">Explore the project</a></li></ul></div></details></div>
+  <h2 style="margin-top:clamp(3rem,8vw,5rem)">Tools &amp; experiments</h2><div>
+  <details><summary><h3>MeloShelf</h3><span>Python, FastAPI, SQLite, Chromaprint</span></summary>
+    <div class="b"><p>A local-first Windows music organizer that identifies tracks, improves metadata, and organizes audio libraries with safety checks and recovery.</p>
+    <ul><li>Windows, local processing</li><li>Review, verification, crash recovery</li><li><a href="https://github.com/Danieljucke/MeloShelf" rel="noopener">View source on GitHub</a></li></ul></div></details>
+  <details><summary><h3>Dream-Teller</h3><span>Flutter · Storytelling · In development</span></summary>
+    <div class="b"><p>An experimental storytelling application. The project is still being developed, and its production features have not yet been independently verified.</p>
+    <ul><li>Status: In development</li><li>Focus: Interactive stories and mobile experiences</li><li>Public demo: Not yet available</li></ul></div></details>
+  <details><summary><h3>Clustriva</h3><span>Coming soon</span></summary>
+    <div class="b"><p>A future software project by Mélo Technology. Details, supported platforms, and release dates will be announced when they are ready.</p>
+    <ul><li>Status: Coming soon</li><li>No launch date announced</li></ul></div></details>
+  <details><summary><h3>Media Duplicate Finder</h3><span>Python, Tkinter, OpenCV</span></summary>
+    <div class="b"><p>A desktop tool for finding visually similar images and videos, with a review step before deletion.</p>
+    <ul><li>Perceptual hashing</li><li>Review before deletion</li><li><a href="https://github.com/Danieljucke/Media-filter" rel="noopener">View source on GitHub</a></li></ul></div></details>
+  <details><summary><h3>Deezer to Spotify</h3><span>Python, Spotipy, OAuth</span></summary>
+    <div class="b"><p>A playlist-transfer utility that matches public Deezer tracks on Spotify and reports missing matches.</p>
+    <ul><li>Track matching</li><li>Batched additions</li><li><a href="https://github.com/Danieljucke/DeezerToSpotify" rel="noopener">View source on GitHub</a></li></ul></div></details>
+  <details><summary><h3>SpotiFilter</h3><span>Python, Spotify Web API</span></summary>
+    <div class="b"><p>A command-line utility for exploring a Spotify library and generating genre- or region-based playlists without duplicate additions.</p>
+    <ul><li>Command-line interface</li><li>Environment-based configuration</li><li><a href="https://github.com/Danieljucke/SpotiFilter" rel="noopener">View source on GitHub</a></li></ul></div></details></div>
+</div></section>
+
+<section class="s" id="approach"><div class="wrap">
+  <h2>Approach</h2>
+  <div class="ap">
+    <div><h3>Reliable workflows</h3><ul><li>Explicit previews and confirmations</li><li>Recoverable file operations</li><li>Clear error reporting</li></ul></div>
+    <div><h3>Maintainable systems</h3><ul><li>Focused modules and APIs</li><li>Tests around critical behavior</li><li>Repeatable setup and packaging</li></ul></div>
+    <div><h3>Responsible data use</h3><ul><li>Local processing wherever practical</li><li>Credentials kept outside source control</li><li>Limitations described plainly</li></ul></div>
+  </div>
+</div></section>
+
+<section class="s term" id="console"><div class="wrap">
+  <h2>Console</h2>
+  <div class="box" id="box"><div id="out" aria-live="polite"><p>Type help and press Enter.</p></div>
+  <form class="p" id="f"><span class="ok" aria-hidden="true">lio@tunnel:~$</span><input id="in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command"></form></div>
+</div></section>
+
+<section class="s cta" id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <a class="mail" href="mailto:melotechnology@proton.me">melotechnology@proton.me</a>
+  <p class="soc"><a href="https://github.com/Danieljucke" rel="noopener">Personal GitHub</a><a href="https://github.com/Melo-Technology" rel="noopener">Mélo Technology GitHub</a><a href="https://www.linkedin.com/in/joy-daniel-9428b9348" rel="noopener">LinkedIn</a><a href="https://x.com/MeloTechnology_" rel="noopener">Mélo Technology on X</a></p>
+</div></section>
+</main>
+<footer><div class="wrap">Mélo Technology. No trackers. No external runtime dependencies.<span id="ld"></span></div></footer>
+
+<script>
+(function(){
+var D=document,r=D.documentElement,$=function(s){return D.querySelector(s)};
+var clk=$('#clk'),hue=$('#hue'),mode=$('#mode');
+function tick(){clk.textContent=new Date().toLocaleTimeString('en-GB')}tick();setInterval(tick,1000);
+function dark(){return r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches}
+function lab(){mode.textContent=dark()?'Light mode':'Dark mode'}
+function setTheme(t){r.dataset.theme=t;lab();try{localStorage.setItem('t',t)}catch(e){}}
+try{var t0=localStorage.getItem('t'),h0=localStorage.getItem('h');if(t0)r.dataset.theme=t0;if(h0){hue.value=h0;r.style.setProperty('--h',h0)}}catch(e){}
+if(!h0){var hh=[250,250,250,250,250,330,20,40,170,185,190,195,195,190,185,175,160,35,15,340,300,280,265,255][new Date().getHours()];hue.value=hh;r.style.setProperty('--h',hh)}
+lab();
+hue.addEventListener('input',function(){r.style.setProperty('--h',hue.value);try{localStorage.setItem('h',hue.value)}catch(e){}});
+mode.addEventListener('click',function(){setTheme(dark()?'light':'dark')});
+var bar=$('#bar'),q=0;
+function sc(){q=0;var p=scrollY/Math.max(1,D.body.scrollHeight-innerHeight);bar.style.transform='scaleY('+Math.min(1,Math.max(0,p))+')'}
+addEventListener('scroll',function(){if(!q)q=requestAnimationFrame(sc)},{passive:true});sc();
+
+var hero=$('#top'),cv=$('#cv'),x=cv.getContext('2d'),cnt=$('#cnt'),lt=[].slice.call(D.querySelectorAll('h1 .g'));
+var W,H,mx=-1e3,my=0,tm=0,got=0,pulse=0,ink='#000',ps=[],pk=[],lc=[],run=false,still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+for(var i=0;i<110;i++)ps.push({t:Math.random(),s:.0006+Math.random()*.0012,l:(Math.random()-.5)*2});
+function size(){var d=Math.min(2,devicePixelRatio||1);W=hero.clientWidth;H=hero.clientHeight;cv.width=W*d;cv.height=H*d;x.setTransform(d,0,0,d,0,0);ink=getComputedStyle(hero).color;var b=hero.getBoundingClientRect();lc=lt.map(function(e){var a=e.getBoundingClientRect();return[a.left-b.left+a.width/2,a.top-b.top+a.height/2]});if(!run)draw()}
+function pos(t,l){var nw=Math.min(90,W*.1),a=W*.03+nw,b=W*.97-nw,px=a+(b-a)*t,py=H*.68+l*H*.06+Math.sin(t*12.57+tm)*H*.025,d=px-mx,k=Math.exp(-d*d/(2*170*170));return[px,py+(my-py)*.6*k]}
+function draw(){
+  x.clearRect(0,0,W,H);x.fillStyle=ink;x.strokeStyle=ink;
+  var nw=Math.min(90,W*.1),ny=H*.68;
+  x.lineWidth=3;x.globalAlpha=1;
+  x.strokeRect(W*.03,ny-55,nw,110);
+  x.globalAlpha=1;x.strokeRect(W*.97-nw,ny-55,nw,110);
+  if(pulse>0){x.globalAlpha=pulse;x.fillRect(W*.97-nw,ny-55,nw,110)}
+  x.globalAlpha=1;x.font='600 13px ui-monospace,Menlo,Consolas,monospace';
+  x.fillText('Server',W*.03+8,ny+4);x.fillText('Player',W*.97-nw+8,ny+4);
+  for(var i=0;i<ps.length;i++){var p=ps[i],a=pos(p.t,p.l),b=pos(Math.max(0,p.t-.012),p.l);x.globalAlpha=.2+.55*Math.sin(Math.PI*p.t);x.lineWidth=2;x.beginPath();x.moveTo(b[0],b[1]);x.lineTo(a[0],a[1]);x.stroke();x.fillRect(a[0]-1.5,a[1]-1.5,3,3)}
+  x.globalAlpha=1;
+  for(i=0;i<pk.length;i++){var q=pk[i];if(q.t<0)continue;var c=pos(q.t,q.l);x.fillStyle=ink;x.fillRect(c[0]-18,c[1]-9,36,18);x.fillStyle=getComputedStyle(hero).backgroundColor;x.font='700 11px ui-monospace,Menlo,Consolas,monospace';x.fillText(q.h,c[0]-14,c[1]+4);x.fillStyle=ink}
+  for(i=0;i<lt.length;i++){var dx=lc[i][0]-mx,dy=lc[i][1]-my,k=Math.exp(-(dx*dx+dy*dy)/(2*230*230));lt[i].style.transform='translateY('+(-k*H*.03).toFixed(1)+'px) skewX('+(-k*14).toFixed(1)+'deg) scaleY('+(1+k*.12).toFixed(3)+')'}
+}
+function step(){if(!run)return;tm+=.016;for(var i=0;i<ps.length;i++){var p=ps[i];p.t+=p.s;if(p.t>1)p.t=0}
+  for(i=pk.length-1;i>=0;i--){pk[i].t+=.006;if(pk[i].t>=1){pk.splice(i,1);arrive()}}
+  if(pulse>0)pulse-=.03;draw();requestAnimationFrame(step)}
+function start(){if(still||run)return;run=true;requestAnimationFrame(step)}
+new IntersectionObserver(function(e){if(e[0].isIntersecting)start();else run=false}).observe(hero);
+hero.addEventListener('pointermove',function(e){var b=hero.getBoundingClientRect();mx=e.clientX-b.left;my=e.clientY-b.top;if(still)draw()});
+hero.addEventListener('pointerleave',function(){mx=-1e3});
+hero.addEventListener('click',function(e){if(e.target.closest('a,button,input'))return;if(pk.length<12)pk.push({t:0,l:(Math.random()-.5)*2,h:'0x'+Math.floor(Math.random()*256).toString(16).padStart(2,'0')});if(still)arrive();});
+addEventListener('resize',size);size();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(size);
+
+var out=$('#out'),inp=$('#in'),box=$('#box');
+function say(s,c){var p=D.createElement('p');p.textContent=s;if(c)p.className=c;out.appendChild(p);box.scrollTop=box.scrollHeight}
+var PROJECTS={
+  'netshare-server':{status:'Published on Microsoft Store',stack:'Python, Tkinter, Cloudflare Tunnel',url:'server.html'},
+  'netshare-player':{status:'Android published; iOS planned',stack:'Flutter, Dart, streaming, local networking',url:'player.html'},
+  'fullstack':{status:'Engineering practice',stack:'React, Vue.js, Node.js, Express, FastAPI, C#, .NET',url:'fullstack.html'},
+  'meloshelf':{status:'Windows release',stack:'Python, FastAPI, SQLite, Chromaprint',url:'https://github.com/Danieljucke/MeloShelf'},
+  'dream-teller':{status:'In development',stack:'Flutter, interactive storytelling',url:null},
+  'clustriva':{status:'Coming soon',stack:'Details not yet announced',url:null},
+  'media-filter':{status:'Public repository',stack:'Python, Tkinter, OpenCV',url:'https://github.com/Danieljucke/Media-filter'},
+  'deezer-to-spotify':{status:'Public repository',stack:'Python, Spotipy, OAuth',url:'https://github.com/Danieljucke/DeezerToSpotify'},
+  'spotifilter':{status:'Public repository',stack:'Python, Spotify Web API',url:'https://github.com/Danieljucke/SpotiFilter'}
+};
+var STACKS={
+ frontend:'React, Vue.js, TypeScript, JavaScript, HTML, CSS',
+ mobile:'Flutter, Dart, Android integration, responsive UI',
+ backend:'Node.js, Express, Python, FastAPI, C#, .NET 8, REST APIs',
+ data:'PostgreSQL, SQLite, MySQL, MongoDB, Prisma',
+ tooling:'Docker, Git, GitHub Actions, pytest, CI/CD',
+ all:'Frontend / Mobile / Backend / Data / Tooling — type stack <category>'
+};
+var LINKS={personal:'https://github.com/Danieljucke',melo:'https://github.com/Melo-Technology',linkedin:'https://www.linkedin.com/in/joy-daniel-9428b9348',twitter:'https://x.com/MeloTechnology_',netshare:'https://www.netshareplayer.com/',email:'mailto:melotechnology@proton.me'};
+var HELP=['help                       List commands','projects                   List all projects','project <name>             Project details','stack [category]           frontend / mobile / backend / data / tooling / all','ls [-a] | pwd | cat .tunnel.conf','whoami | status | date','links | github [personal|melo] | contact','open <project|link>        Open a verified page (on request only)','ping <server|player>       Simulated packet animation; not a network test','theme [light|dark|toggle]  Change visual theme','hue <0-360>               Change signal hue','history | clear','Tab = autocomplete · Up/Down = command history'];
+var history=[],historyCursor=0;
+function projectNames(){return Object.keys(PROJECTS)}
+function openUrl(url){if(!url){say('No public URL is available for that item yet.');return}if(/^https?:/.test(url)){window.open(url,'_blank','noopener,noreferrer')}else if(/^mailto:/.test(url)){location.href=url}else{location.href=url}}
+var C=Object.create(null);
+C.help=function(){HELP.forEach(function(line){say(line)})};
+C.whoami=function(){say('Lio — software engineer at Mélo Technology. I build useful, local-first software.')};
+C.projects=function(){projectNames().forEach(function(k){say(k+' — '+PROJECTS[k].status)})};
+C.project=function(a){var k=(a[0]||'').toLowerCase(),p=PROJECTS[k];if(!p){say('Usage: project <name>. Try projects.');return}say(k+' | '+p.status,'ok');say('Stack: '+p.stack);say(p.url?'Open with: open '+k:'No public demo link is available yet.')};
+C.stack=function(a){var k=(a[0]||'all').toLowerCase();if(!Object.prototype.hasOwnProperty.call(STACKS,k)){say('Unknown category. Try stack all.');return}say(k+': '+STACKS[k],'ok')};
+C.ls=function(a){say((a[0]==='-a'?'.  ..  .tunnel.conf  ':'')+projectNames().map(function(x){return x+'/'}).join('  '))};
+C.pwd=function(){say('/home/lio/portfolio')};
+C.cat=function(a){if(a[0]==='.tunnel.conf'){['# Illustrative configuration only','mode = simulated','transports = desktop + mobile','secrets = never displayed'].forEach(function(x){say(x)})}else{say('No such demo file. Try: cat .tunnel.conf')}};
+C.status=function(){say('Portfolio: online demo | Terminal: sandboxed in browser | Network requests: none','ok');say('Dream-Teller: in development | Clustriva: coming soon')};
+C.date=function(){say(new Date().toLocaleString('en-GB'))};
+C.links=function(){say('Personal GitHub: '+LINKS.personal);say('Mélo GitHub: '+LINKS.melo);say('LinkedIn: '+LINKS.linkedin);say('NetShare: '+LINKS.netshare);say('Mélo Technology on X: '+LINKS.twitter)};
+C.github=function(a){var k=(a[0]||'personal').toLowerCase();if(k==='melo'){say(LINKS.melo,'ok')}else if(k==='personal'){say(LINKS.personal,'ok')}else{say('Try: github personal or github melo')}};
+C.twitter=function(){say(LINKS.twitter,'ok')};
+C.contact=C.hire=function(){say('melotechnology@proton.me','ok')};
+C.open=function(a){var key=(a[0]||'').toLowerCase();if(PROJECTS[key])return openUrl(PROJECTS[key].url);if(LINKS[key])return openUrl(LINKS[key]);say('Unknown or unpublished link. Try projects or links.')};
+C.ping=function(a){var target=(a[0]||'').toLowerCase();if(target!=='server'&&target!=='player'){say('Usage: ping server | ping player');return}say('Sending simulated packets to '+target+' (demo only; no network request).','ok');for(var i=0;i<3;i++)pk.push({t:0,l:i-1,h:'0x'+(160+i*7).toString(16)})};
+C.theme=function(a){var t=(a[0]||'toggle').toLowerCase();if(t!=='toggle'&&t!=='dark'&&t!=='light'){say('Usage: theme light | dark | toggle');return}setTheme(t==='toggle'?(dark()?'light':'dark'):t);say('Theme: '+(dark()?'dark':'light'),'ok')};
+C.hue=function(a){var n=Number(a[0]);if(!a.length||!Number.isInteger(n)||n<0||n>360){say('Usage: hue <0-360>');return}hue.value=String(n);r.style.setProperty('--h',String(n));try{localStorage.setItem('h',String(n))}catch(e){}say('Signal hue: '+n,'ok')};
+C.history=function(){history.forEach(function(x,i){say((i+1)+'  '+x)})};
+C.clear=function(){out.textContent=''};
+C.coffee=function(){say('418: I am a teapot.')};
+C.rm=function(){say('Demo shell: destructive commands are not supported.')};
+C.sudo=function(){say('No privileged commands are available in this browser demo.')};
+C.exit=function(){say('Session is local to this page. You can close the tab anytime.')};
+$('#f').addEventListener('submit',function(e){e.preventDefault();var raw=inp.value.trim();inp.value='';if(!raw)return;history.push(raw);if(history.length>100)history.shift();historyCursor=history.length;say('$ '+raw);var a=raw.split(/\s+/),k=a.shift().toLowerCase(),fn=C[k];if(typeof fn==='function'){fn(a)}else{say('Command not found: '+k+'. Type help.')}});
+inp.addEventListener('keydown',function(e){
+ if(e.key==='ArrowUp'){e.preventDefault();if(historyCursor>0)historyCursor--;inp.value=history[historyCursor]||''}
+ else if(e.key==='ArrowDown'){e.preventDefault();if(historyCursor<history.length)historyCursor++;inp.value=history[historyCursor]||''}
+ else if(e.key==='Tab'){e.preventDefault();var v=inp.value.toLowerCase().trim();if(!v)return;var a=v.split(/\s+/),opts=[];
+  if(a.length===1){opts=Object.keys(C).filter(function(x){return x.indexOf(a[0])===0})}
+  else if(a[0]==='project'||a[0]==='open'){opts=projectNames().concat(Object.keys(LINKS)).filter(function(x){return x.indexOf(a[1]||'')===0})}
+  else if(a[0]==='stack'){opts=Object.keys(STACKS).filter(function(x){return x.indexOf(a[1]||'')===0})}
+  else if(a[0]==='theme'){opts=['light','dark','toggle'].filter(function(x){return x.indexOf(a[1]||'')===0})}
+  if(opts.length===1){inp.value=a.length===1?opts[0]:a[0]+' '+opts[0]}
+  else if(opts.length>1){say('Suggestions: '+opts.join('  '))}
+ }
+});
+box.addEventListener('click',function(e){if(e.target===box||e.target===out)inp.focus()});
+var FACTS=['NetShare connects a desktop server and a mobile player.','NetShare Server is built with Python and Tkinter.','NetShare Player is built with Flutter for Android; iOS is planned.','A Cloudflare Zero Trust tunnel is supported for remote connections.','NetShare Server has a Microsoft Store distribution.','The interactive terminal runs entirely inside your browser.'],found=[],fe=$('#fact');
+function arrive(){got++;pulse=.9;if(found.length>5)return;var k;do{k=Math.floor(Math.random()*6)}while(found.indexOf(k)>-1);found.push(k);fe.textContent=FACTS[k];cnt.textContent=found.length+'/6 facts';if(found.length===6)setTimeout(function(){fe.innerHTML='All six facts unlocked. Contact: <a href="mailto:melotechnology@proton.me">melotechnology@proton.me</a>'},2800)}
+var kk=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'],ki=0;
+addEventListener('keydown',function(e){ki=e.key===kk[ki]?ki+1:(e.key===kk[0]?1:0);if(ki===kk.length){ki=0;arcade()}});
+function arcade(){say('Arcade mode activated.','ok');for(var i=0;i<24;i++)pk.push({t:-i*.045,l:Math.sin(i)*.9,h:'0x'+(i*11).toString(16).padStart(2,'0')});if(!still){var n=0,h=+hue.value,iv=setInterval(function(){r.style.setProperty('--h',(h+n*5)%360);if(++n>72){clearInterval(iv);r.style.setProperty('--h',hue.value)}},40)}}
+if(still){var am=$('h1 animateMotion');if(am)am.remove()}
+addEventListener('load',function(){setTimeout(function(){var n=performance.getEntriesByType('navigation')[0];if(n&&n.loadEventEnd)$('#ld').textContent=' Loaded in '+Math.round(n.loadEventEnd)+' ms.'},0)});
+})();
+</script>
 </body>
 </html>

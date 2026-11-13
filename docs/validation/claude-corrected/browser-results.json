@@ -1,0 +1,106 @@
+{
+  "responsive": [
+    {
+      "width": 320,
+      "height": 720,
+      "mode": "light",
+      "passed": true
+    },
+    {
+      "width": 320,
+      "height": 720,
+      "mode": "dark",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "light",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mode": "dark",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "mode": "light",
+      "passed": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "mode": "dark",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "mode": "light",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "mode": "dark",
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 320,
+      "mode": "light",
+      "serious_or_critical": 0
+    },
+    {
+      "width": 320,
+      "mode": "dark",
+      "serious_or_critical": 0
+    },
+    {
+      "width": 390,
+      "mode": "light",
+      "serious_or_critical": 0
+    },
+    {
+      "width": 390,
+      "mode": "dark",
+      "serious_or_critical": 0
+    },
+    {
+      "width": 768,
+      "mode": "light",
+      "serious_or_critical": 0
+    },
+    {
+      "width": 768,
+      "mode": "dark",
+      "serious_or_critical": 0
+    },
+    {
+      "width": 1440,
+      "mode": "light",
+      "serious_or_critical": 0
+    },
+    {
+      "width": 1440,
+      "mode": "dark",
+      "serious_or_critical": 0
+    }
+  ],
+  "console": {
+    "commands": 19,
+    "history": true,
+    "tab_completion": true,
+    "keyboard_focus": true
+  },
+  "navigation": {
+    "page_transition": true,
+    "server_round_trip": true
+  },
+  "reduced_motion": true,
+  "detail_pages_mobile": true
+}
