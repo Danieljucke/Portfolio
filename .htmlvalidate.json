@@ -1,0 +1,9 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "no-inline-style": "off",
+    "empty-heading": "off",
+    "aria-label-misuse": "off",
+    "wcag/h32": "off"
+  }
+}
