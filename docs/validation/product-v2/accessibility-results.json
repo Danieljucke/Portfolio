@@ -1,0 +1,42 @@
+[
+  {
+    "page": "index.html",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "page": "index.html",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "page": "server.html",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "page": "server.html",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "page": "player.html",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "page": "player.html",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "page": "fullstack.html",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "page": "fullstack.html",
+    "theme": "light",
+    "violations": []
+  }
+]
