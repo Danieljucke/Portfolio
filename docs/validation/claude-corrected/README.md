@@ -30,7 +30,7 @@ The screenshots were captured from a local HTTP server with real Playwright Chro
 - Reduced-motion emulation passed.
 - All local links and fragments resolve; the four documents use `lang="en"`.
 - Dream-Teller remains `In development`; Clustriva remains `Coming soon`.
-- The Mélo Technology GitHub URL is preserved. No X/Twitter URL is published.
+- The Mélo Technology GitHub URL is preserved, and the owner-confirmed X URL is linked.
 - `html-validate`, Node syntax checks for all eight inline JavaScript blocks, and `git diff --check` passed.
 
 Machine-readable browser results are in [browser-results.json](browser-results.json). Reproducible validation scripts are stored in `tests/`.

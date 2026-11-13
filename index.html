@@ -62,11 +62,11 @@ h2{font-size:clamp(2.4rem,7vw,5.5rem);letter-spacing:-.05em;line-height:.95;marg
 .term .p{display:flex;gap:.6rem}
 .term input{flex:1;min-width:0;background:none;border:0;color:inherit;font:inherit;outline:0}
 .term .box:focus-within{outline:3px solid var(--sig);outline-offset:3px}
-.term .ok{color:var(--sig);filter:brightness(1.1)}
+.term .ok{color:inherit}
 .cta{background:var(--fld);color:var(--on)}
 .mail{display:block;font-size:clamp(1.6rem,7.4vw,6.4rem);font-weight:900;letter-spacing:-.06em;line-height:1;text-decoration:underline;text-decoration-thickness:.07em;text-underline-offset:.12em;overflow-wrap:anywhere}
 .mail:hover{background:var(--on);color:var(--fld);text-decoration:none}
-footer{padding:1.6rem 0;font-size:.9rem;color:var(--mut)}
+footer{padding:1.6rem 0;font-size:.9rem;color:var(--mut);text-align:center}
 @media (max-width:900px){.rail{display:none}.w .b{grid-template-columns:1fr}}
 @media (max-width:640px){.ctl label{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -155,7 +155,7 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 <section class="s cta" id="contact"><div class="wrap">
   <h2>Contact</h2>
   <a class="mail" href="mailto:melotechnology@proton.me">melotechnology@proton.me</a>
-  <p class="soc"><a href="https://github.com/Danieljucke" rel="noopener">Personal GitHub</a><a href="https://github.com/Melo-Technology" rel="noopener">Mélo Technology GitHub</a><a href="https://www.linkedin.com/in/joy-daniel-9428b9348" rel="noopener">LinkedIn</a><span title="Official brand account not yet verified">Mélo X / Twitter — coming soon</span></p>
+  <p class="soc"><a href="https://github.com/Danieljucke" rel="noopener">Personal GitHub</a><a href="https://github.com/Melo-Technology" rel="noopener">Mélo Technology GitHub</a><a href="https://www.linkedin.com/in/joy-daniel-9428b9348" rel="noopener">LinkedIn</a><a href="https://x.com/MeloTechnology_" rel="noopener">Mélo Technology on X</a></p>
 </div></section>
 </main>
 <footer><div class="wrap">Mélo Technology. No trackers. No external runtime dependencies.<span id="ld"></span></div></footer>
@@ -227,7 +227,7 @@ var STACKS={
  tooling:'Docker, Git, GitHub Actions, pytest, CI/CD',
  all:'Frontend / Mobile / Backend / Data / Tooling — type stack <category>'
 };
-var LINKS={personal:'https://github.com/Danieljucke',melo:'https://github.com/Melo-Technology',linkedin:'https://www.linkedin.com/in/joy-daniel-9428b9348',netshare:'https://www.netshareplayer.com/',email:'mailto:melotechnology@proton.me'};
+var LINKS={personal:'https://github.com/Danieljucke',melo:'https://github.com/Melo-Technology',linkedin:'https://www.linkedin.com/in/joy-daniel-9428b9348',twitter:'https://x.com/MeloTechnology_',netshare:'https://www.netshareplayer.com/',email:'mailto:melotechnology@proton.me'};
 var HELP=['help                       List commands','projects                   List all projects','project <name>             Project details','stack [category]           frontend / mobile / backend / data / tooling / all','ls [-a] | pwd | cat .tunnel.conf','whoami | status | date','links | github [personal|melo] | contact','open <project|link>        Open a verified page (on request only)','ping <server|player>       Simulated packet animation; not a network test','theme [light|dark|toggle]  Change visual theme','hue <0-360>               Change signal hue','history | clear','Tab = autocomplete · Up/Down = command history'];
 var history=[],historyCursor=0;
 function projectNames(){return Object.keys(PROJECTS)}
@@ -243,9 +243,9 @@ C.pwd=function(){say('/home/lio/portfolio')};
 C.cat=function(a){if(a[0]==='.tunnel.conf'){['# Illustrative configuration only','mode = simulated','transports = desktop + mobile','secrets = never displayed'].forEach(function(x){say(x)})}else{say('No such demo file. Try: cat .tunnel.conf')}};
 C.status=function(){say('Portfolio: online demo | Terminal: sandboxed in browser | Network requests: none','ok');say('Dream-Teller: in development | Clustriva: coming soon')};
 C.date=function(){say(new Date().toLocaleString('en-GB'))};
-C.links=function(){say('Personal GitHub: '+LINKS.personal);say('Mélo GitHub: '+LINKS.melo);say('LinkedIn: '+LINKS.linkedin);say('NetShare: '+LINKS.netshare);say('Mélo X / Twitter: not verified yet')};
+C.links=function(){say('Personal GitHub: '+LINKS.personal);say('Mélo GitHub: '+LINKS.melo);say('LinkedIn: '+LINKS.linkedin);say('NetShare: '+LINKS.netshare);say('Mélo Technology on X: '+LINKS.twitter)};
 C.github=function(a){var k=(a[0]||'personal').toLowerCase();if(k==='melo'){say(LINKS.melo,'ok')}else if(k==='personal'){say(LINKS.personal,'ok')}else{say('Try: github personal or github melo')}};
-C.twitter=function(){say('Mélo Technology X / Twitter link pending verification; no URL has been published.')};
+C.twitter=function(){say(LINKS.twitter,'ok')};
 C.contact=C.hire=function(){say('melotechnology@proton.me','ok')};
 C.open=function(a){var key=(a[0]||'').toLowerCase();if(PROJECTS[key])return openUrl(PROJECTS[key].url);if(LINKS[key])return openUrl(LINKS[key]);say('Unknown or unpublished link. Try projects or links.')};
 C.ping=function(a){var target=(a[0]||'').toLowerCase();if(target!=='server'&&target!=='player'){say('Usage: ping server | ping player');return}say('Sending simulated packets to '+target+' (demo only; no network request).','ok');for(var i=0;i<3;i++)pk.push({t:0,l:i-1,h:'0x'+(160+i*7).toString(16)})};

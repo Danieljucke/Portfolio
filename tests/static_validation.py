@@ -42,11 +42,11 @@ for page in PAGES:
 home = PAGES[0].read_text(encoding="utf-8")
 required = [
     "Dream-Teller", "In development", "Clustriva", "Coming soon",
-    "https://github.com/Melo-Technology", "X / Twitter link pending verification",
+    "https://github.com/Melo-Technology", "https://x.com/MeloTechnology_",
     "Google Play", "Huawei AppGallery", "iOS support planned",
 ]
 for text in required:
     assert text in home, text
-assert "twitter.com/" not in home.lower() and "x.com/" not in home.lower()
+assert "twitter.com/" not in home.lower()
 assert "Chargée en" not in home
 print("Static validation passed for four HTML pages and all local links.")

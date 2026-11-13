@@ -85,7 +85,7 @@ with sync_playwright() as playwright:
     for command in commands:
         run_command(page, command)
     output = page.locator("#out").inner_text()
-    for expected in ("In development", "Coming soon", "Melo-Technology", "pending verification", "simulated"):
+    for expected in ("In development", "Coming soon", "Melo-Technology", "x.com/MeloTechnology_", "simulated"):
         assert expected.lower() in output.lower(), expected
     page.locator("#in").press("ArrowUp")
     assert page.locator("#in").input_value() == "history"
